@@ -44,8 +44,8 @@ importers:
         specifier: 15.5.21
         version: 15.5.21(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       postgres:
-        specifier: 3.4.5
-        version: 3.4.5
+        specifier: 3.4.9
+        version: 3.4.9
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -114,8 +114,8 @@ importers:
         specifier: workspace:*
         version: link:../contracts
       postgres:
-        specifier: 3.4.5
-        version: 3.4.5
+        specifier: 3.4.9
+        version: 3.4.9
       viem:
         specifier: 2.47.4
         version: 2.47.4(bufferutil@4.1.0)(typescript@5.8.3)(utf-8-validate@6.0.6)(zod@4.3.6)
@@ -148,8 +148,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/backend
       postgres:
-        specifier: 3.4.5
-        version: 3.4.5
+        specifier: 3.4.9
+        version: 3.4.9
       viem:
         specifier: 2.47.4
         version: 2.47.4(bufferutil@4.1.0)(typescript@5.8.3)(utf-8-validate@6.0.6)(zod@4.3.6)
@@ -4665,8 +4665,8 @@ packages:
     resolution: {integrity: sha512-g50586zr4bZmwFiTlflMu8E0bDTb5I5gertgwAKmsdUlTQIhZtunzUlD1WSzwcVWPoAVpsrA6vlfCD7oXvRwgg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postgres@3.4.5:
-    resolution: {integrity: sha512-cDWgoah1Gez9rN3H4165peY9qfpEo+SA61oQv65O3cRUE1pOEoJWwddwcqKE8XZYjbblOJlYDlLV4h67HrEVDg==}
+  postgres@3.4.9:
+    resolution: {integrity: sha512-GD3qdB0x1z9xgFI6cdRD6xu2Sp2WCOEoe3mtnyB5Ee0XrrL5Pe+e4CCnJrRMnL1zYtRDZmQQVbvOttLnKDLnaw==}
     engines: {node: '>=12'}
 
   preact@10.24.2:
@@ -11995,7 +11995,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postgres@3.4.5: {}
+  postgres@3.4.9: {}
 
   preact@10.24.2: {}
 
