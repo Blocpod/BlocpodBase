@@ -1,0 +1,23 @@
+{
+  "name": "@blocpod/agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "exports": { ".": "./src/index.ts" },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run test/policy.test.ts",
+    "test:runtime": "vitest run test/actions.test.ts"
+  },
+  "dependencies": {
+    "viem": "2.47.4",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@coinbase/agentkit": "0.10.4",
+    "@types/node": "22.15.30",
+    "typescript": "5.8.3",
+    "vitest": "3.2.4"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@blocpod/contracts-solidity",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "forge build --sizes",
+    "check": "./scripts/contract-acceptance.sh",
+    "test": "forge test",
+    "test:ci": "FOUNDRY_PROFILE=ci forge test"
+  }
+}

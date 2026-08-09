@@ -1,0 +1,26 @@
+export const baseTokenFactoryV1Abi = [
+  { type: "error", name: "EmptyName", inputs: [] },
+  { type: "error", name: "EmptySymbol", inputs: [] },
+  { type: "error", name: "NameTooLong", inputs: [{ name: "length", type: "uint256" }, { name: "maxLength", type: "uint256" }] },
+  { type: "error", name: "SymbolTooLong", inputs: [{ name: "length", type: "uint256" }, { name: "maxLength", type: "uint256" }] },
+  { type: "error", name: "ZeroInitialRecipient", inputs: [] },
+  { type: "error", name: "ZeroInitialSupply", inputs: [] },
+  { type: "error", name: "SaltAlreadyUsed", inputs: [{ name: "creator", type: "address" }, { name: "userSalt", type: "bytes32" }, { name: "token", type: "address" }] },
+  {
+    type: "event", name: "TokenDeployed", anonymous: false,
+    inputs: [
+      { name: "creator", type: "address", indexed: true },
+      { name: "token", type: "address", indexed: true },
+      { name: "deploymentSalt", type: "bytes32", indexed: true },
+      { name: "initialRecipient", type: "address", indexed: false },
+      { name: "name", type: "string", indexed: false },
+      { name: "symbol", type: "string", indexed: false },
+      { name: "initialSupply", type: "uint256", indexed: false },
+      { name: "userSalt", type: "bytes32", indexed: false },
+    ],
+  },
+  { type: "function", name: "computeDeploymentSalt", inputs: [{ name: "creator", type: "address" }, { name: "userSalt", type: "bytes32" }], outputs: [{ name: "", type: "bytes32" }], stateMutability: "pure" },
+  { type: "function", name: "deployToken", inputs: [{ name: "name", type: "string" }, { name: "symbol", type: "string" }, { name: "initialSupply", type: "uint256" }, { name: "initialRecipient", type: "address" }, { name: "userSalt", type: "bytes32" }], outputs: [{ name: "token", type: "address" }], stateMutability: "nonpayable" },
+  { type: "function", name: "deploymentOf", inputs: [{ name: "creator", type: "address" }, { name: "userSalt", type: "bytes32" }], outputs: [{ name: "", type: "address" }], stateMutability: "view" },
+  { type: "function", name: "predictTokenAddress", inputs: [{ name: "creator", type: "address" }, { name: "name", type: "string" }, { name: "symbol", type: "string" }, { name: "initialSupply", type: "uint256" }, { name: "initialRecipient", type: "address" }, { name: "userSalt", type: "bytes32" }], outputs: [{ name: "predicted", type: "address" }], stateMutability: "view" },
+] as const;

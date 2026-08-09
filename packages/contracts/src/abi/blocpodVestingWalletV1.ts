@@ -1,0 +1,15 @@
+export const blocpodVestingWalletV1Abi = [
+  { type: "error", name: "BeneficiaryIsImmutable", inputs: [] },
+  { type: "function", name: "duration", inputs: [], outputs: [{ name: "", type: "uint256" }], stateMutability: "view" },
+  { type: "function", name: "end", inputs: [], outputs: [{ name: "", type: "uint256" }], stateMutability: "view" },
+  { type: "function", name: "owner", inputs: [], outputs: [{ name: "", type: "address" }], stateMutability: "view" },
+  { type: "function", name: "start", inputs: [], outputs: [{ name: "", type: "uint256" }], stateMutability: "view" },
+  { type: "function", name: "release", inputs: [], outputs: [], stateMutability: "nonpayable" },
+  { type: "function", name: "release", inputs: [{ name: "token", type: "address" }], outputs: [], stateMutability: "nonpayable" },
+  { type: "function", name: "released", inputs: [], outputs: [{ name: "", type: "uint256" }], stateMutability: "view" },
+  { type: "function", name: "released", inputs: [{ name: "token", type: "address" }], outputs: [{ name: "", type: "uint256" }], stateMutability: "view" },
+  { type: "function", name: "releasable", inputs: [], outputs: [{ name: "", type: "uint256" }], stateMutability: "view" },
+  { type: "function", name: "releasable", inputs: [{ name: "token", type: "address" }], outputs: [{ name: "", type: "uint256" }], stateMutability: "view" },
+  { type: "function", name: "vestedAmount", inputs: [{ name: "timestamp", type: "uint64" }], outputs: [{ name: "", type: "uint256" }], stateMutability: "view" },
+  { type: "function", name: "vestedAmount", inputs: [{ name: "token", type: "address" }, { name: "timestamp", type: "uint64" }], outputs: [{ name: "", type: "uint256" }], stateMutability: "view" },
+] as const;

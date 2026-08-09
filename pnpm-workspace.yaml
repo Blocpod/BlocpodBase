@@ -1,0 +1,10 @@
+packages:
+  - "contracts"
+  - "apps/*"
+  - "packages/*"
+  - "services/*"
+
+onlyBuiltDependencies:
+  - "@coinbase/wallet-sdk"
+  - "esbuild"
+  - "sharp"
