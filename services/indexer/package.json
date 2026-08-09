@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@blocpod/backend": "workspace:*",
-    "postgres": "3.4.5",
+    "postgres": "3.4.9",
     "viem": "2.47.4"
   },
   "devDependencies": {
