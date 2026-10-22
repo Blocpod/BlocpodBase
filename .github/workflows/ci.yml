@@ -23,7 +23,7 @@ jobs:
           version: 9.4.0
       - uses: actions/setup-node@v4
         with:
-          node-version: 20.18.0
+          node-version: 22.23.4
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm security:dependencies
@@ -71,7 +71,7 @@ jobs:
           version: 9.4.0
       - uses: actions/setup-node@v4
         with:
-          node-version: 20.18.0
+          node-version: 22.23.4
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter @blocpod/backend migrate
@@ -87,7 +87,7 @@ jobs:
           version: 9.4.0
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 22.23.4
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter @blocpod/agent typecheck
